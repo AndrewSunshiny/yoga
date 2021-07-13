@@ -246,7 +246,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (restDays.value == '' || persons.value == '') {
       totalValue.innerHTML = 0;
     } else {
-
+      let a = total;
+      totalValue.innerHTML = a * this.options[this.selectedIndex].value;
     }
-  })
+  });
 });
